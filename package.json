@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "@yszk0123/jscodeshift-transforms",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:yszk0123/jscodeshift-transforms.git",
+  "author": "Yuji Suzuki <y0suzuki0123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "yarn clean && tsc -p tsconfig.build.json",
+    "test": "jest",
+    "semantic-release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/jscodeshift": "^0.6.3",
+    "@types/node": "^12.12.14",
+    "jest": "^24.9.0",
+    "jscodeshift": "https://github.com/facebook/jscodeshift.git#c84b7452f5b03bb9f6947d83f66d468539923b82",
+    "prettier": "^1.19.1",
+    "semantic-release": "^15.13.31",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {}
+}

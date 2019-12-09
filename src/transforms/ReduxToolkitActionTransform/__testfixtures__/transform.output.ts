@@ -1,3 +1,4 @@
+import { createAction } from '@reduxjs/toolkit';
 type ReturnTypes<T> = any;
 declare const createActionCreators: <T>() => any;
 
@@ -26,12 +27,11 @@ type NamespaceActionCreators = typeof namespaceActions;
 
 export type NamespaceActions = ReturnTypes<NamespaceActionCreators>;
 
-// GENERATED -------------------------------------------------------------------
-import { createAction } from '@reduxjs/toolkit';
-
 export const namespaceFooShown = createAction(
   'namespace/FOO_SHOWN',
-  (payload: { error: unknown }) => ({ payload }),
+  (payload: { error: unknown }) => ({
+    payload,
+  }),
 );
 
 export const namespaceFooHidden = createAction('namespace/FOO_HIDDEN', () => ({

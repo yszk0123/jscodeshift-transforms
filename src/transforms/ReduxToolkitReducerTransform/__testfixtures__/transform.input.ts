@@ -10,10 +10,10 @@ export const namespaceReducer = createReducer<
   NamespaceActionType,
   ValueOf<NamespaceActions>
 >(namespaceInitialState, {
-  [NamespaceActionType.NAMESPACE_FOO_SHOWN](state, { payload: { error } }) {
+  [NamespaceActionType.FOO_SHOWN](state, { payload: { error } }) {
     return { ...state, error };
   },
-  [NamespaceActionType.NAMESPACE_FOO_HIDDEN](state) {
+  [NamespaceActionType.FOO_HIDDEN](state) {
     return { ...state, error: null };
   },
 });

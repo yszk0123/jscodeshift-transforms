@@ -4,7 +4,7 @@
     "module": "commonjs",
     "lib": ["ES2019"],
 
-    "strict": true,
+    "strict": false,
 
     /* Additional Checks */
     // "noUnusedLocals": true,                /* Report errors on unused locals. */

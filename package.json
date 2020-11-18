@@ -25,7 +25,7 @@
     "jest": "^24.9.0",
     "jscodeshift": "https://github.com/facebook/jscodeshift.git#c84b7452f5b03bb9f6947d83f66d468539923b82",
     "prettier": "^1.19.1",
-    "semantic-release": "^15.13.31",
+    "semantic-release": "^17.2.3",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.3"
   },
